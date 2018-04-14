@@ -34,6 +34,10 @@ class ChildClass(BaseClass):
         mine = ["argum", "value"]
         return inherited + mine
 
+
 if __name__ == "__main__":
     a = ChildClass(1, 2, 3)
     print(a)
+    b = ChildClass(a, 4, 5)
+    print(b)
+
