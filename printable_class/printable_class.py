@@ -1,5 +1,5 @@
 class PrintableClass:
-    def __printable_attributes__() -> list:
+    def __printable_attributes__(self) -> list:
         """Function returning attributes which fields and properties
         should be printed. Other classes can inherit from this one and overload
         this method.
@@ -19,3 +19,4 @@ class PrintableClass:
         return "<{}.{} instance at {} with attributes {}>".format(self.__class__.__module__,
                                                                   self.__class__.__name__,
                                                                   hex(id(self)), vals_str)
+
