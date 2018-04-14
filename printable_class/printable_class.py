@@ -1,5 +1,4 @@
 class PrintableClass:
-    @staticmethod
     def __printable_attributes__() -> list:
         """Function returning attributes which fields and properties
         should be printed. Other classes can inherit from this one and overload

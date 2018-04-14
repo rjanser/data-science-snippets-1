@@ -9,8 +9,8 @@ do
     echo "Executing $notebook..."
     # Go to the right directory
     pth=$(dirname ${notebook})
-	cd $pth
-	jup=$(basename ${notebook})
+    cd $pth
+    jup=$(basename ${notebook})
 
     # Remove %matplotlib inline, as it may break the nbconvert magic
     copied_jup=$jup"2"
@@ -23,7 +23,7 @@ do
     # Remove unnecesary files
     rm $scriptname $copied_jup
 
-	cd $root_dir
+    cd $root_dir
 done
 
 echo "Finished."
